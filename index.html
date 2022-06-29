@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LIG4</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Audiowide&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="font.css">
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+    <header>
+        <h1 class="gradient">Lig-4</h1>
+    </header>
+
+    <div class="main">
+        <div id="table"></div>
+        <div id="playerTurn">
+            <div class="playerTime playerTime1">
+                <div id="disc1" class="playerDisc playerDisc1">
+                    <div class="container">
+                        <div class="container_circle container_shadow">
+                        </div>
+                    </div>
+                </div>
+                <div class="playerName playerName1">
+                    <div id="popup1" class="overlay">
+                        <div class="popup">
+                            <h2>Player Name</h2>
+                            <a class="close" href="#">&times;</a>
+                            <div class="content">
+                                <input id="valueName" placeholder="New Name..." type="text" name="playerName" id="pn">
+                                <input id="changeName" type="submit" href="#" value="Salvar">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="box">
+                        <a id="player1" class="button" href="#popup1">Player1</a>
+
+                    </div>
+
+                </div>
+            </div>
+            <div class="selectorArrow">
+                <input type="checkbox" disabled id="animation3">
+                <label for="animation3">
+                    <div class="arrow"></div>
+                </label>
+            </div>
+            <div class="playerTime playerTime2">
+                <div class="playerName playerName2">
+                    <div class="box">
+                        <a id="player2" class="button" href="#popup1">Player2</a>
+                    </div>
+                </div>
+                <div id="disc2" class="playerDisc playerDisc2"></div>
+            </div>
+        </div>
+
+        <div id="vitoria" class="w3-modal">
+            <div id="card" class="w3-modal-content">
+                <header id="headerCard">
+                    <h2 id="player"></h2>
+                </header>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+    <script src="winConditions.js"></script>
+
+</body>
+
+</html>
